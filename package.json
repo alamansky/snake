@@ -1,38 +1,39 @@
 {
-  "name": "javascript-boilerplates",
-  "version": "1.0.0",
-  "description": "Starter kits for javascript-based projects.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Alamansky/javascript-boilerplates.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Alamansky/javascript-boilerplates/issues"
-  },
-  "homepage": "https://github.com/Alamansky/javascript-boilerplates#readme",
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.5",
-    "css-loader": "^2.1.0",
-    "eslint": "^5.12.0",
-    "eslint-config-prettier": "^3.4.0",
-    "eslint-plugin-babel": "^5.3.0",
-    "html-webpack-plugin": "^3.2.0",
-    "prettier": "^1.15.3",
-    "style-loader": "^0.23.1",
-    "stylelint": "^9.9.0",
-    "stylelint-config-standard": "^18.2.0",
-    "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
-  }
+	"name": "javascript-boilerplates",
+	"version": "1.0.0",
+	"description": "Starter kits for javascript-based projects.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node_modules/.bin/webpack-dev-server --mode development --config webpack.config.js --open --hot --history-api-fallback"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Alamansky/javascript-boilerplates.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Alamansky/javascript-boilerplates/issues"
+	},
+	"homepage": "https://github.com/Alamansky/javascript-boilerplates#readme",
+	"devDependencies": {
+		"@babel/core": "^7.2.2",
+		"@babel/preset-env": "^7.2.3",
+		"babel-eslint": "^10.0.1",
+		"babel-loader": "^8.0.5",
+		"css-loader": "^2.1.0",
+		"eslint": "^5.12.0",
+		"eslint-config-prettier": "^3.4.0",
+		"eslint-plugin-babel": "^5.3.0",
+		"html-webpack-plugin": "^3.2.0",
+		"prettier": "^1.15.3",
+		"style-loader": "^0.23.1",
+		"stylelint": "^9.9.0",
+		"stylelint-config-standard": "^18.2.0",
+		"webpack": "^4.28.4",
+		"webpack-cli": "^3.2.1",
+		"webpack-dev-server": "^3.1.14"
+	}
 }
