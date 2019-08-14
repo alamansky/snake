@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node_modules/.bin/webpack-dev-server --mode development --config webpack.config.js --open --hot --history-api-fallback"
+		"start": "node_modules/.bin/webpack-dev-server --mode development --config webpack.config.js --open firefox --hot --history-api-fallback",
+		"deploy": "gh-pages -d dist"
 	},
 	"repository": {
 		"type": "git",
@@ -35,5 +36,10 @@
 		"webpack": "^4.28.4",
 		"webpack-cli": "^3.2.1",
 		"webpack-dev-server": "^3.1.14"
+	},
+	"dependencies": {
+		"ahl-lib-con": "^1.0.0",
+		"ahl-lib-idb": "^1.0.0",
+		"gh-pages": "^2.1.1"
 	}
 }

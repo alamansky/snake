@@ -12,7 +12,10 @@ module.exports = {
 		filename: 'main.js', //default path
 	},
 	module: {
-		rules: [{ test: /\.js$/, use: ['babel-loader'] }, { test: /\.css$/, use: ['style-loader', 'css-loader'] }],
+		rules: [
+			{ test: /\.js$/, use: ['babel-loader'] },
+			{ test: /\.css$/, use: [{ loader: 'style-loader' }, { loader: 'css-loader', options: { sourceMap: true } }] },
+		],
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
@@ -20,4 +23,5 @@ module.exports = {
 			filename: './index.html',
 		}),
 	],
+	//devtool: 'source-map',
 };
